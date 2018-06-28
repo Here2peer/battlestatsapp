@@ -1,0 +1,109 @@
+@media only screen and (max-width: 1145px) {
+
+
+  #ranking-container{
+    display: none;
+  }
+
+  .mobile-hide{
+    display:none !important;
+  }
+}
+
+.player-overall-stats{
+  background: rgb(0,0,0,0.5);
+}
+.top-row th{
+  height: 40px;
+  width: 100px;
+
+}
+
+.bottom-row td{
+  height: 40px;
+  width: 100px;
+
+}
+.filler{
+  width: 99.9% !important;
+}
+
+.user-container {
+  padding: 10px 10px;
+  display: inline-block;
+  text-align: center;
+}
+.user{
+}
+
+.user-image {
+  height: 70px;
+  float: left;
+  margin-left: 10px;
+}
+
+.player{
+  max-width: 750px;
+  text-align: center;
+  color: black;
+}
+
+li{
+  list-style: none;
+}
+
+#ranking-container{
+  margin-top: 1em;
+  text-align: justify;
+  height: 76px;
+
+}
+#ranking-container > div.ranking-alignment-box {
+  width: 16%; /* Declare your value. Can be in relative units. */
+  display: inline-block;
+  vertical-align: top;
+  alignment: center;
+  /* IE fix. */
+  *display: inline;
+  zoom: 1;
+}
+#ranking-container:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+}
+.ranking-box{
+  width: 150px;
+  padding: 5px 15px;
+  background: rgb(230,90,37,0.5);
+  text-align: left;
+}
+
+.ranking-title{
+
+}
+
+.champion-image {
+  height: 40px;
+}
+
+.mat-grid-tile {
+  background: rgb(0,0,0,0.5);
+  color: white;
+
+}
+
+.tileTitle{
+  background: none;
+  color: lightgray;
+}
+.champions-container{
+  background: rgb(0,0,0,0.5);
+  margin-top: 1em;
+  text-align: center;
+}
+
+.champion-name {
+  text-align: left;
+}
+

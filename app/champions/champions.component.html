@@ -1,0 +1,55 @@
+<div class="champion-wrapper">
+  <div class="champion-group" >
+    <ul class="champion-cat">
+      <h2>All champions</h2>
+      <ng-container *ngFor="let item of newgameplay">
+
+        <mat-card [ngClass]="{'active': item.active, 'center': item.active}" class="champion">
+          <div [ngClass]="{'hide': item.active}" class="">
+          <div (click)="changeStateActivate(item)">
+            <mat-card-header>
+              <mat-card-title>{{item.name}}</mat-card-title>
+              <mat-card-subtitle></mat-card-subtitle>
+            </mat-card-header>
+          <img mat-card-lg-image src="../../assets/champions/portraits/{{item.name}}.png">
+          </div>
+
+
+
+
+            <mat-tab-group class="championGroup buttons" [ngClass]="{'active': item.active}">
+              <mat-tab label="Lore">
+                <div class="lore">
+                  {{item.description}}
+                </div>
+              </mat-tab>
+              <mat-tab label="Skills">
+                <div class="skills">
+                  <ng-container *ngFor="let ability of ['ability1', 'ability2', 'ability3', 'ability4', 'ability5', 'ability6', 'ability7']">
+                    <mat-card class="skillcard">
+                      <img mat-card-md-image src="../../assets/champions/images/{{item[ability]['icon128']}}.jpg">
+                      <mat-card-title>{{item[ability].name}}</mat-card-title>
+                      <mat-card-content>{{item[ability].description}}</mat-card-content>
+                    </mat-card>
+                  </ng-container>
+                </div>
+              </mat-tab>
+              <mat-tab label="Battlerites">
+                <div class="battlerites">
+                  <ng-container class="battleriites" *ngFor="let skills of item.battlerites">
+                    <mat-card class="battlecards">
+                      <img mat-card-md-image src="../../assets/champions/images/{{skills.icon}}.jpg" width="25px">
+                      <mat-card-title>{{skills.name}}</mat-card-title>
+                      <mat-card-content>{{skills.description}}</mat-card-content>
+                    </mat-card>
+                  </ng-container>
+                </div>
+              </mat-tab>
+            </mat-tab-group>
+          </div>
+        </mat-card>
+      </ng-container>
+    </ul>
+  </div>
+</div>
+

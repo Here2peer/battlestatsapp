@@ -1,0 +1,154 @@
+li {
+  list-style: none;
+}
+
+.champion-cat {
+  text-align: left;
+  min-height: 250px;
+  position: relative;
+  padding-left: 2em;
+}
+
+.mat-card {
+  display: inline-block;
+  min-width: 8em;
+  text-align: center;
+  background: #d36f15;
+  color: white;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.mat-card-header{
+  margin-bottom: 5px;
+  height: 100%;
+}
+
+.mat-card-image{
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.mat-card-title {
+  font-size: 20px;
+  height: 12px;
+
+}
+
+.mat-card-header{
+  display: block;
+  margin-bottom: 1em;
+}
+
+.buttons {
+  display: none;
+  background: #a25410;
+}
+
+.championGroup{
+  display: none;
+  background: #a25410;
+  margin-top: 1em;
+}
+
+.buttons.active{
+  display: block;
+}
+
+.mat-card-subtitle {
+  font-size: 12px;
+  height: 0px;
+
+}
+
+.skills img{
+  margin: 0;
+}
+
+.champion button{
+  display: none;
+}
+
+.champion {
+  -webkit-transition: width 2s, height 4s; /* Safari */
+  transition: width 2s, height 4s;
+}
+
+.champion.active{
+  width: 97%;
+  height: 126%;
+  max-width: 100%;
+  z-index: 2;
+}
+
+.mat-card-lg-image {
+  width: auto;
+  height: auto;
+}
+
+.champion.active.skills{
+  display: block;
+}
+
+.champion.active button{
+  display: inline;
+  float: left;
+}
+
+.skills.active{
+  float: left;
+  margin: 0;
+}
+
+.lore.active{
+  display: block;
+}
+
+.mat-card-content {
+  margin-top: 1em;
+}
+
+.center {
+  position: absolute; /* or absolute */
+  top: 0;
+  left: 2em;
+}
+
+.skills img{
+  max-height: 10em;
+  max-width: 10em;
+}
+
+.skillcard {
+  float: left;
+  max-width: 17em;
+  min-height: 25em; 'todo fix card height old value 25em'
+  margin-top: 1em;
+  margin-left: 1em;
+  width: 100%;
+}
+
+.skillcard mat-card-title{
+  margin-bottom: 1em;
+}
+
+.battlecards {
+  float: left;
+  max-width: 15em;
+  min-height: 24em; 'todo fix card height old value 24em'
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mat-card {
+    min-width: 5em;
+    display: block;
+    height: 100%;
+  }
+
+  .mat-card-lg-image {
+    width: 35%;
+  }
+
+}

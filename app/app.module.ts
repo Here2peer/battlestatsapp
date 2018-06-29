@@ -18,7 +18,7 @@ import {HttpClientModule} from '@angular/common/http';
     ],
     declarations: [
         AppComponent,
-        PlayerListComponent
+        LandingComponent
     ],
     schemas: [
         NO_ERRORS_SCHEMA

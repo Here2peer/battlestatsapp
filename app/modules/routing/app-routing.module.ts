@@ -1,17 +1,10 @@
-import { NgModule } from "@angular/core";
-import { Routes } from "@angular/router";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import {LandingComponent} from "~/landing/landing.component";
-import {PlayerStatsComponent} from "~/player-stats/player-stats.component";
-import {TeamStatsComponent} from "~/team-stats/team-stats.component";
-import {ChampionsComponent} from "~/champions/champions.component";
-import {TournamentComponent} from "~/tournament/tournament.component";
-import {SteamAuthComponent} from "~/steam-auth/steam-auth.component";
-import {PlayerListComponent} from "~/player-list/player-list.component";
-import {LeaderboardComponent} from "~/leaderboard/leaderboard.component";
+import { NgModule } from '@angular/core';
+import { Routes } from '@angular/router';
+import { NativeScriptRouterModule } from 'nativescript-angular/router';
+import {PlayerListComponent} from '../../player-list/player-list.component';
 
 const routes: Routes = [
-    { path: '', component: LandingComponent },
+    { path: '', component: PlayerListComponent },
     /*{ path: 'player/:id', component: PlayerStatsComponent },
     { path: 'team', component: TeamStatsComponent },
     { path: 'champions', component: ChampionsComponent },

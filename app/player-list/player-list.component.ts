@@ -6,15 +6,17 @@ import {Sort} from '@angular/material';
 
 @Component({
   selector: 'app-player-list',
+  moduleId: module.id,
   templateUrl: './player-list.component.html',
-  styleUrls: ['./player-list.component.css']
+  styleUrls: ['./player-list.component.css'],
+    providers: [PlayerService]
 })
 export class PlayerListComponent implements OnInit {
   search: number;
   playername: string;
   playerlist;
 
-  constructor(private route: ActivatedRoute, private router: Router ,private playerService: PlayerService) { }
+  constructor(private route: ActivatedRoute, private router: Router , private playerService: PlayerService) { }
 
   ngOnInit() {
     this.searchPlayers();

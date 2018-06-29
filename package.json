@@ -24,6 +24,8 @@
 		"es6-promise": "^4.2.4",
 		"express": "^4.16.3",
 		"hbs": "^4.0.1",
+		"@angular/cdk": "^6.1.0",
+		"@angular/material": "^6.0.1",
 		"nativescript-angular": "~6.0.6",
 		"nativescript-theme-core": "~1.0.4",
 		"nativescript-ui-autocomplete": "^3.7.1",

@@ -4,6 +4,8 @@ import { NativeScriptModule } from 'nativescript-angular/nativescript.module';
 import { AppRoutingModule } from './modules/routing/app-routing.module';
 import { AppComponent } from './app.component';
 import {LandingComponent} from './landing/landing.component';
+import {PlayerListComponent} from '~/player-list/player-list.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
     bootstrap: [
@@ -11,11 +13,12 @@ import {LandingComponent} from './landing/landing.component';
     ],
     imports: [
         NativeScriptModule,
-        AppRoutingModule
+        AppRoutingModule,
+        HttpClientModule
     ],
     declarations: [
         AppComponent,
-        LandingComponent
+        PlayerListComponent
     ],
     schemas: [
         NO_ERRORS_SCHEMA

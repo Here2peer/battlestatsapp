@@ -6,6 +6,7 @@
 /out-tsc
 /platforms
 /android
+*.js
 
 # dependencies
 /node_modules

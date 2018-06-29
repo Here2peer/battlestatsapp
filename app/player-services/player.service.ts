@@ -10,13 +10,13 @@ export class PlayerService {
 
   getPlayer(playerName: string, id: boolean) {
     if (id) {
-      return this.http.get('http://127.0.0.1:5000/player?player=' + playerName + '&id=true');
+      return this.http.get('http://192.168.178.17:5000/player?player=' + playerName + '&id=true');
     } else {
-      return this.http.get('http://127.0.0.1:5000/player?player=' + playerName);
+      return this.http.get('http://192.168.178.17:5000/player?player=' + playerName);
     }
   }
 
   getAllPlayers() {
-    return this.http.get('http://127.0.0.1:5000/players');
+    return this.http.get('http://192.168.178.17:5000/players');
   }
 }

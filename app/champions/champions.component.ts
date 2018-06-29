@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {ChampionsService} from './champions.service';
-import {isBoolean} from 'util';
 
 @Component({
   selector: 'app-champions',
